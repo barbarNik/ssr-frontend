@@ -1,0 +1,6 @@
+#import "../fragments/pokemonFragment.graphql"
+query getPokedex{
+    getPokedex{
+        ...pokemonFragment
+    }
+}

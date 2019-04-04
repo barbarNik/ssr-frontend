@@ -1,0 +1,6 @@
+#import "../fragments/userFragment.graphql"
+mutation singIn($username:String!, $password:String!){
+    SignIn(username: $username,password: $password){
+        ...userFragment
+    }
+}

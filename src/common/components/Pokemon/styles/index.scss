@@ -1,0 +1,22 @@
+.pokemonContainer {
+  width: 300px;
+  border: 1px solid rgba(34, 36, 38, .1);
+  margin: 5px;
+  padding: 5px;
+  box-shadow: 9px 8px 6px -6px rgba(34, 36, 38, .1);
+  .imgContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      height: 200px;
+    }
+  }
+
+  .tableContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

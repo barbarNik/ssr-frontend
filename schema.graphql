@@ -1,0 +1,50 @@
+# This file was generated based on ".graphqlconfig" at Mon Mar 11 11:59:29 CET 2019. Do not edit manually.
+
+schema {
+    query: Query
+    mutation: Mutation
+}
+
+type Mutation {
+    SignIn(password: String!, username: String!): User
+}
+
+type Pokemon {
+    height: Range
+    id: String
+    image: String
+    name: String
+    number: String
+    types: [String]
+    weight: Range
+}
+
+type Query {
+    currentUser: User
+    getAdminPokedex: [Pokemon]
+    getPokedex: [Pokemon]
+    getPokemons: [Pokemon]
+}
+
+type Range {
+    maximum: String
+    minimux: String
+}
+
+type User {
+    avatar: String
+    id: String
+    jwt: String
+    name: String
+    role: String
+    surname: String
+    username: String
+}
+
+enum CacheControlScope {
+    PRIVATE
+    PUBLIC
+}
+
+"The `Upload` scalar type represents a file upload."
+scalar Upload

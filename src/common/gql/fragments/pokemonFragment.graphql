@@ -1,0 +1,15 @@
+fragment pokemonFragment on Pokemon{
+    id
+    image
+    name
+    number
+    types
+    weight{
+        maximum
+        minimux
+    }
+    height{
+        maximum
+        minimux
+    }
+}
